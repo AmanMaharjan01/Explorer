@@ -1,0 +1,1330 @@
+@import url('https://fonts.googleapis.com/css2?family=Cairo&family=Nunito+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cinzel&family=Roboto:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rajdhani:wght@500&family=Raleway:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Muli&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Exo:wght@500&display=swap');
+
+body
+{
+	margin: 0px;
+	padding: 0px;
+	background-image: url(../img/bg.jpg);
+	background-size: 1520px 890px;
+	background-repeat: no-repeat;
+}
+
+/*navbar*/
+
+.navbar
+{
+	background-color: white;
+}
+
+.navbar #nav-logo
+{
+	margin-left: 50px;
+}
+
+.navbar .logo-name
+{
+	color: #669999;
+	font-size: 24px;
+	font-family: 'Exo', sans-serif;
+
+}
+
+.navbar ul
+{
+	margin-right: 50px;
+}
+
+.navbar ul li
+{
+	padding-top: 15px;
+	padding-right: 25px;
+}
+
+.navbar .navbar-nav li a
+{
+	text-transform: uppercase;
+	font-size: 16px;
+	font-family: 'Nunito Sans', sans-serif;
+	transition: width .1s;
+	color: #669999 !important;
+	display: block;
+}
+
+.navbar .navbar-nav li a#menu-link::after {
+  display: block;
+  content: '';
+  width: 0%;
+  height: 2px;
+  background: #669999;
+  transition: width .3s;
+}
+
+.navbar .navbar-nav li a#menu-link:hover::after
+{
+	width: 100%;
+	transition: width .3s;
+}
+
+.navbar ul #nav-menu
+{
+	padding-top: 18px;
+}
+
+
+.navbar ul li.active a
+{
+   color: #000 !important;
+}
+
+.navbar .navbar-nav li.active a#menu-link::after {
+  display: block;
+  content: '';
+  width: 100%;
+  height: 2px;
+  background: #669999;
+}
+
+.navbar ul #nav-button
+{
+	padding: 0px;
+}
+
+.navbar ul li #signup
+{
+	width: 100px;
+	height: 40px;
+	font-size: 14px;
+	font-family: 'Nunito Sans', sans-serif;
+	text-transform: uppercase;
+    background-color: #669999;
+    border:none;
+    border-radius: 25px 25px 25px 25px;
+	color: white;
+	transition: .2s;
+}
+
+.navbar ul li #signup:hover
+{
+	background-color: #4b9c9c;
+    transform: scale(1.1);
+}
+
+/*end of navbar*/
+
+.overlay
+{
+	width: 100%;
+	height: 810px;
+}
+
+#front-caption
+{
+	position: absolute;
+	top: 45%;
+	left: 5%;
+	display: flex;
+
+}
+
+#front-caption #content
+{
+	width: 550px;
+	z-index: -1;
+}
+
+#front-caption #b-t
+{
+	width:550px;
+}
+
+#front-caption .big-text{
+	color: aliceblue;
+	font-weight: bolder;
+	font-family: 'Raleway', sans-serif;
+	font-size: 40px;
+	font-weight: bold;
+	text-transform: uppercase;
+}
+
+#front-caption .small-text{
+	color: aliceblue;
+	font-family: 'Muli', sans-serif;
+	font-size: 17px;
+	letter-spacing: 1px;
+}
+
+#front-caption #ticket
+{
+	width: 150px;
+	height: 50px;
+	border: none;
+	border-radius: 25px 25px 25px 25px;
+    background-color: #ffffff;
+	color: #669999;
+	transition: .05s;
+	position: relative;
+	left: 0%;
+	z-index: 1;
+	position: absolute;
+	top: 95%;
+}	
+
+#front-caption #ticket:hover
+{
+ background-color: #4b9c9c;
+ color: #ffffff;
+}
+
+/* frontpage */
+
+.frontpage
+{
+	width: 100%;
+	height: 980px;
+	justify-content: center;
+}
+
+.frontpage .row 
+{
+	margin: 0px;
+	margin-left: 50px;
+	margin-right: 50px;
+	display: flex;
+	flex-direction: row;
+}
+
+
+
+.frontpage .row #col1 img{
+
+   width: 600px;
+   height: 470px;
+   margin-top: 50px;
+
+}
+
+
+.frontpage .row #col1,#col3{
+	
+   height: 692px;
+}
+
+.frontpage .row #col1
+{
+	width: 60%;
+	height: 600px;
+}
+.frontpage .row #col3
+{
+	width: 40%;
+	height: 600px
+}
+
+.frontpage .row #col3 .quote
+{
+   margin-left: auto;
+   margin-right: auto;
+   font-size: 26px;
+   color: #669999;
+   text-transform: uppercase;
+   font-family: 'Muli', sans-serif;
+
+}
+
+.frontpage .row #col3 .quote #narrator
+{
+   color: #949494;
+   float: right;
+}
+
+.frontpage .row #col3 #col3-content
+{
+	width: 80%;
+	height: 40%;
+	margin: 200px auto;
+	
+}
+
+.form
+{
+	width: 100%;
+	height: 340px;
+	font-family: 'Muli', sans-serif;
+}
+
+.form .container{
+	display: flex;
+	justify-content: center;
+}
+
+.form .container .col2 #content
+{
+   margin: 40px auto;
+}
+
+.form .container .col2 #content span
+{
+	color: #669999;
+}
+
+.form .container .col2 #content .quote2
+{
+	font-size: 36px;
+	font-weight: bold;
+}
+.form .container .col2 #content .quote3
+{
+	font-size: 17px;
+	color: #949494;
+}
+
+.form .container .col2 #content input
+{
+     height: 36px;
+     padding-left: 10px;
+     display: inline;
+}
+
+.form .container .col2 #content input,button
+{
+	margin-top: 10px;
+	border: 1px solid #669999;
+	border-radius: 2px;
+}
+
+.form .container .col2 #content button
+{
+	border: none;
+	color: #ffffff;
+	background-color: #669999;
+	height: 36px;
+	width: 80px;
+	transition: .2s;
+}
+
+.form .container .col2 #content button:hover
+{
+	background-color: #ffffff;
+	color: #669999;
+	border: 1px solid #669999;
+}
+
+/*end of front page*/
+
+#about
+{
+	width: 100%;
+	height: 800px; 
+	background-color: #669999;
+	margin: 0px;
+    font-family: 'Muli', sans-serif;
+	position: relative;
+}
+
+#about .container .content1,.content2
+{
+	height: 400px;
+	display: flex;
+	flex-direction: row;
+}
+
+#about .container .content1 .quote4
+{
+	margin: 70px auto;
+}
+
+
+#about .container #col1,#col2
+{
+	width: 50%;
+	height: 100%;
+	position: relative;
+}
+
+#about .container #btn
+{
+	position: absolute; 
+	top: 44%; 
+	left: 38%;
+	background-color: unset;
+	color: white;
+	width: 120px;
+	height: 50px;
+	border: 1px solid white;
+	border-radius: 5px;
+}
+
+#about .container #btn:hover
+{
+	background-color: #ffffff;
+	color: #669999;
+}
+
+#about .container .content1 #col1 .quote4
+{
+	width: 70%;
+	margin-top: 70px;
+}
+
+#about .container .content1 #col1 .quote4 .text1
+{
+	font-size: 46px;
+	color: #ffffff;
+    font-family: 'Muli', sans-serif;
+    font-weight: bold;
+
+}
+
+#about .container .content1 #col1 .quote4 .text2
+{
+     font-size: 17px;
+     color: #ffffff;
+	 font-family: 'Muli', sans-serif;
+
+}
+
+#about .container img
+{
+     width: 450px;
+     height: 300px;
+     margin-top: 50px;
+     margin-left: 50px;
+}
+
+#landing
+{
+
+	width: 85%;
+	height: 950px;
+	margin: 0 auto;
+	position: relative;
+    font-family: 'Muli', sans-serif;
+
+}
+
+#landing .quote5
+{
+    font-family: 'Muli', sans-serif;
+}
+
+
+#landing .quote5 .content
+{
+    width: 35%;
+    margin: 80px auto;
+    text-align: center;
+}
+
+#landing .quote5 .content .big-text
+{
+
+	font-size: 38px;
+	color: #669999;
+	font-weight: bold;
+}
+
+#landing .quote5 .content .small-text
+{
+	font-size: 17px;
+	color: #949494;
+}
+
+#landing .images
+{
+	height: 600px;
+	display: flex;
+	flex-direction: row;
+}
+
+#landing .images div
+{
+	flex: 1;
+	position: relative;
+}
+
+#landing .images #images
+{
+
+	height: 550px;
+    width: 370px;
+
+}
+
+#landing .images .box
+{
+   position: absolute;
+   top: 60%;
+   left: 6.7%;
+   color: black;
+   font-size: 15px;
+   width: 80%;
+   height: 192px;
+   background-color: white;
+}
+
+#landing .images .box .content
+{
+   width: 80%;
+   margin: 10px auto;
+}
+
+#landing .images .box .content p
+{
+	font-size: 25px;
+	color: #669999;
+	font-weight: bold;
+}
+
+#landing .images .box .content span
+{
+	font-size: 15px;
+	color: #949494;
+}
+
+#landing .images .box .content #link
+{
+	color: #a86767;
+	text-decoration: underline;
+}
+
+#landing .images .box .content #link:hover
+{
+	color: #e87d6f;
+}
+
+#booking
+{
+   width: 100%;
+   height: 800px;
+   position: relative;
+   font-family: 'Muli', sans-serif;
+
+}
+
+#container
+{
+	width: 85%;
+	margin: 100px auto;
+}
+#booking #container .row
+{
+    display: flex;
+    height: 500px;
+    flex-direction: row;
+}
+
+#booking #container .row .row1,.row2
+{
+	flex: 1;
+	display: flex;
+	flex-direction: row;
+	height: 500px;
+}
+
+#booking #container .row .col1,.col2
+{
+	flex: 1;
+}
+
+#booking #container .row #quad,#quad1
+{
+	width: 300px;
+	height: 390px;
+	border-radius: 5px;
+	margin: 50px auto;
+}
+
+#booking #container .form
+{
+	display: inline-block;
+	width: 450px;
+	height: 480px;
+	background-color: #fff;
+	position: absolute;
+	top: 60%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	border: 5px solid #f7f7f7;
+}
+
+#booking #container .form .big-text
+{
+	width: 350px;
+	font-size: 25px;
+	color: #669999;
+	margin-top: 20px;
+	font-weight: bold;
+}
+#booking #container .form .small-text
+{
+	color: #949494;
+	margin-top: 10px;
+    font-size: 13px;
+    width: 300px;
+}
+
+#booking #container .form form
+{
+	display: inline-block;
+	margin: 50px auto;
+}
+
+#booking #container .form form #name,#email,#workshop,#btn
+{
+	width: 340px;
+	height: 50px;
+}
+
+#booking #container .form form #name,#email,#workshop
+{
+	 margin-bottom: 10px;
+	 padding-left: 10px;
+}
+
+#booking #container .form form #btn
+{
+	background-color: #669999;
+	color: #fff;
+}
+
+#booking #container .form form #btn:hover
+{
+	background-color: #fff;
+	color: #669999;
+	border: 1px solid #669999;
+}
+
+#companies
+ {
+ 	width: 100%;
+ 	height: 600px;
+    font-family: 'Muli', sans-serif;
+    font-size: 18px;
+
+ }
+
+#companies .caption
+{
+	text-transform: uppercase;
+	color: #669999;
+}
+
+#companies .wrapper
+{
+
+	width: 100%;
+    margin: 100px auto;
+	display: grid;
+	grid-template-columns: repeat(auto-fit,minmax(14rem, 1fr));
+	grid-auto-rows: minmax(100px, auto); 
+}
+
+#companies .wrapper  div
+{
+	padding: 1em;
+}
+
+#companies .wrapper div #book
+{
+	margin-top: 35px
+}
+
+#companies .wrapper div #twitch
+{
+	margin-top: 40px;
+}
+
+#companies .wrapper div #paypal
+{
+	margin-top: 60px;
+}
+
+#companies .wrapper div #pin
+{
+	margin-top: 60px;
+}
+
+#companies .wrapper div #net
+{
+	margin-top: 50px;
+}
+
+#companies .wrapper div #discord
+{
+	margin-top: 50px;
+}
+
+#companies .wrapper div #insta
+{
+	margin-top: 50px;
+}
+
+#companies .wrapper  div img{
+
+	transition: .2s;
+	cursor: pointer;
+}
+
+#companies .wrapper  div img:hover
+{
+	transform: scale(1.2);
+}
+
+
+.footer
+{
+	width: 100%;
+	height: 500px;
+	background-color: #669999;
+    font-family: 'Muli', sans-serif;
+    position: relative;
+
+}
+
+
+.footer .wrapper
+{ 
+    background-color: #669999;  
+	width: 85%;
+    margin: 50px auto;
+	display: grid;
+	grid-template-columns: repeat(auto-fit,minmax(14rem, 1fr));
+	grid-auto-rows: minmax(100px, auto); 
+}
+
+.footer .wrapper  div
+{
+	padding: 1em;
+
+}
+
+.footer .wrapper div #heading
+{
+	font-size: 19px;
+	color: white;
+	padding-left: 40px;
+	font-weight: bold;
+}
+
+.footer .wrapper  div #sub
+{
+    font-size: 18px;
+    color: white;
+    font-weight: bold;
+}
+
+.footer .wrapper  div ul
+{
+	padding-top: 25px;
+}
+
+.footer .wrapper  div ul li
+{
+	list-style: none;
+}
+
+.footer .wrapper div ul li a
+{
+	text-decoration: none;
+	color: #ccffff;
+	font-size: 15px;
+}
+
+.footer .wrapper div ul li a:hover
+{
+	color: #fff;
+}
+
+.footer .wrapper  div #sub-quote
+{
+	font-size: 15px;
+	color: #ccffff;
+}
+
+.footer .wrapper .box #email1
+{
+	padding-left: 10px;
+	height: 32px;
+	border: none;
+	border-radius: 2px;
+}
+
+.footer .wrapper .box button
+{
+   background-color: unset;
+   height: 32px;
+   width: 100px;
+   color: #fff;
+   border: 1px solid white;
+}
+
+.footer .wrapper .box button:hover
+{
+	color: #669999;
+	border: none;
+	background-color: #fff;
+}
+
+.footer .copyright
+{
+	position: absolute;
+	bottom: 3%;
+	color: white;
+	width: 100%;
+	text-align: center;
+}
+
+ /*Responsive media querie*/
+
+ @media only screen and (max-width: 1522px){
+
+	 #landing .images .box
+	{
+	   position: absolute;
+	   top: 60%;
+	   left: 0%;
+	   width: 100%;
+
+    }
+}
+
+ @media only screen and (max-width: 1451px){
+     
+
+     #booking
+     {
+     	height: 1150px;
+     }
+     #booking #container
+     {
+     	width: 70%;
+     }
+     #booking #container .row
+     {
+     	flex-direction: column;
+     	height: 1000px;
+     }
+
+     #booking #container .row #quad
+     {
+     	height: 370px;
+     	width: 280px;
+     }
+
+
+	#booking #container .form
+	{
+
+		top: 50%;
+		left: 50%;
+	}
+
+ }
+
+
+ @media only screen and (max-width: 1400px){
+
+     #landing .images #images
+    {
+
+	height: 500px;
+    width: 320px;
+
+     }
+
+
+ }
+
+  @media only screen and (max-width: 1324px){
+
+         .footer
+         {
+         	height: 700px;
+         }
+  }
+
+  @media only screen and (max-width: 1310px){
+
+     #companies
+     {
+     	height: 700px;
+     }
+  }
+
+  @media only screen and (max-width: 1200px){
+
+
+       #about .container img
+		{
+		     width: 400px;
+		     height: 250px;
+		     margin-top: 50px;
+		     margin-left: 50px;
+		}
+
+	  #landing .images #images
+	    {
+
+		height: 450px;
+	    width: 280px;
+
+	     }
+	     #about .container #btn
+		{ 
+			top: 40%; 
+			left: 40%;
+		}
+
+  }
+
+  @media only screen and (max-width: 1100px){
+		.frontpage .row 
+	     {
+			flex-direction: column;
+	     }
+		.frontpage .row #col1
+	     {
+		   width: 100%;
+	     }
+	     .frontpage .row #col3
+	     {
+		   width: 100%;
+		   height: 300px;
+	     }
+
+	     .frontpage .row #col3 #col3-content
+	     {
+		  margin: 100px auto;
+		
+	     }
+	     .frontpage
+		{
+			width: 100%;
+			height: 1350px;
+			justify-content: center;
+		}
+	     	
+  } 
+
+   @media only screen and (max-width: 1054px)
+   {
+      #companies
+      {
+      	height: 900px;
+      }
+   }
+
+  @media only screen and (max-width: 1020px)
+  {
+        #landing .images #images
+		    {
+
+			height: 400px;
+		    width: 230px;
+
+		     }
+  }
+
+   @media only screen and (max-width: 995px)
+    {
+           #about .container .content1 #col1 .quote4 .text1
+           {
+           	font-size: 40px;
+           }
+         
+    }
+
+   @media only screen and (max-width: 992px)
+   {
+       #about .container .content1 #col1 .quote4
+       {
+       	margin: 30px auto;
+       }
+        #about .container img
+		{
+		     width: 300px;
+		     height: 200px;
+		     margin-top: 75px;
+		     margin-left: 25px;
+		}
+   }
+
+   @media only screen and (max-width: 945px)
+   {
+   	      #about .container #btn
+		{ 
+			top: 38%; 
+			left: 35%;
+		}
+   } 
+
+   @media only screen and (max-width: 801px)
+   {
+
+   	#landing 
+   	{
+   		height: 1950px;
+   	}
+   	#landing .images
+   	{
+   		flex-direction: column;
+   	}
+
+   	#landing .images #images
+    {
+
+	height: 500px;
+    width: 320px;
+
+    }
+    #landing .images .box
+	{
+	   top: 62%;
+	   width: 100%;
+	   height: 192px;
+	}
+
+	#landing .images .box .content
+     {
+       width: 65%;
+       margin: 5px auto;
+     } 
+
+     #about .container .content1 #col1 .quote4 .text1
+     {
+       font-size: 35px;
+     }
+
+ 	#front-caption #content
+	{
+		width: 450px;
+	}
+
+     #booking
+     {
+     	height: 2350px;
+     	position: relative;
+
+     }
+     #booking #container
+     {
+     	width: 70%;
+     }
+
+     #booking #container .row
+      {
+          height: 1900px;
+      }
+
+      #booking #container .row #quad
+      {
+      	width: 270px;
+      	height: 350px;
+      }
+     #booking #container .row .row1,.row2
+     {
+     	height: 1900px;
+     	flex-direction: column;
+     }
+
+
+		#booking #container .form
+		{
+		
+			top: 90%;
+			left: 50%;
+		
+		}
+
+   }
+
+   @media only screen and (max-width: 799px)
+   {
+      .footer
+      {
+      	height: 800px;
+      }
+   }
+
+    @media only screen and (max-width: 796px)
+    {
+       .footer
+      {
+      	height: 850px;
+      }
+    }
+
+
+   @media only screen and (max-width: 787px)
+   {
+   	#companies
+   	{
+   		height: 1050px;
+   	}
+   }
+
+   @media only screen and (max-width: 770px)
+    {
+
+        #about
+        {
+        	height: 1600px;
+        }
+
+        #about .container .content1,.content2
+		{
+			flex-direction: column;
+			height: 800px;
+		}
+
+		#about .container #col1,#col2
+		{
+			width: 100%;
+			height: 50%;
+		}
+
+		 #about .container img
+		{
+		     width: 400px;
+		     height: 300px;
+		     margin-top: 10px;
+		     margin-left: 50px;
+		}
+
+    }
+  @media only screen and (max-width: 740px){
+        
+	   .frontpage .row #col1 img{
+		width: 500px;
+		height: 400px;
+
+	    }
+
+	    #about .container img
+		{
+		     width: 400px;
+		     height: 300px;
+		     margin-top: 20px;
+		     margin-left: 50px;
+		}
+
+	}
+
+  @media only screen and (max-width: 635px){
+
+	    .frontpage .row #col1
+	    {
+		   width: 100%;
+		   height: 450px;
+	     }
+
+	    .frontpage .row #col1 img{
+		 width: 400px;
+		 height: 300px;
+
+	     }
+
+    }
+
+   @media only screen and (max-width: 635px)
+      {
+         .frontpage
+         {
+         	height: 1100px;
+         }
+      }
+/*
+  @media only screen and (max-width: 561px)
+     {
+        
+	
+
+
+     }*/
+
+    @media only screen and (max-width: 540px)
+    {
+
+    	#front-caption #ticket
+	     {
+           left: 25%;   
+	     }
+
+	     #about .container img
+	     {
+	     	width: 400px;
+	     	height: 300px;
+	     	margin-left: 40px;
+	     	margin-top: 35px;
+	     }
+	        #about .container #btn
+		{ 
+			top: 35%; 
+			left: 30%;
+		}
+
+
+    }
+
+    @media only screen and (max-width: 536px)
+    {
+           .footer
+           {
+           	 height: 1290px;
+           }
+    }
+
+     @media only screen and (max-width: 515px){
+
+     	#companies
+     	{
+     		height: 2100px;
+     	}
+
+     	#companies .wrapper div #Linked
+     	{
+             margin-top: 20px;
+     	}
+
+     	#companies .wrapper div #insta
+     	{
+     		margin-top: 0px;
+     	}
+
+     }
+
+    @media only screen and (max-width: 500px){
+
+	    .frontpage .row #col1
+	    {
+		   width: 100%;
+		   height: 350px;
+	    }
+
+	    .frontpage .row #col1 img
+	    {
+		  width: 300px;
+		  height: 240px;
+
+	    }
+
+	     .frontpage .row #col3 #col3-content
+	     {
+		  margin: 50px auto;
+		
+	      }
+
+	    .frontpage .row 
+	    {
+		
+		  margin: 0px;
+		  margin-left: 10px;
+		  margin-right: 10px;
+
+	    } 
+
+	    #landing .quote5 .content .big-text
+	    {
+	    	font-size: 32px;
+	    }
+
+    }
+
+    @media only screen and (max-width: 482px)
+     {
+       #about .container img
+		{
+		     width: 380px;
+		     height: 270px;
+		     margin-left: 10px;
+		}
+
+		   #about .container #btn
+		{ 
+			top: 35%; 
+			left: 32%;
+		}
+
+     }
+
+     @media only screen and (max-width: 470px)
+     {
+    .form .container .col2 #content input
+      {
+    	display: block;
+      }
+
+     } 
+
+     @media only screen and (max-width: 435px)
+     {
+        #front-caption #content
+		{
+			width: 350px;
+		}
+
+     }
+
+     @media only screen and (max-width: 390px)
+     {
+     		#about .container img
+		{
+		     width: 320px;
+		     height: 230px;
+		     margin-left: 2px;
+		}
+
+		   #about .container #btn
+		{ 
+			top: 35%; 
+			left: 30%;
+		}
+
+		  .frontpage
+         {
+         	height: 1150px;
+         }
+
+         #about
+         {
+             height: 1200px;
+         }
+         #about .container .content1,.content2
+         {
+         	height: 580px;
+         }
+
+          #landing .quote5 .content .big-text
+	    {
+	    	font-size: 25px;
+	    }
+
+
+     }
+
+       @media only screen and (max-width: 360px)
+     {
+        #front-caption #content
+		{
+			width: 250px;
+		}
+     }
+
+
+
+
+/* @media (min-width: 600px) and (max-width: 1000px)
+{
+	
+	.frontpage .row #col1 img{
+		width: 700px;
+		height: 800px;
+	} 
+
+ } */
+
